@@ -1,0 +1,33 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h4>@ViewData["hello_user"]</h4>
+
+<form>
+
+    <p>
+        Town:
+        <input type="text" name="city_name" /> 
+        Country:
+        <input type="text" name="country_name" /> <br /> <br />
+
+        <button type="submit" value="search">Submit</button>
+    </p>
+    
+    <h4>@ViewData["weatherInfo"]</h4>
+    <ul>
+        <li>@ViewData["cityName"]</li>
+        <li>@ViewData["temperature"]</li>
+        <li>@ViewData["dateTime"]</li>
+        <li>@ViewData["sunrise"]</li>
+        <li>@ViewData["sunset"]</li>
+        <li>@ViewData["timezone"]</li>
+    </ul>
+
+    
+    
+
+</form>
